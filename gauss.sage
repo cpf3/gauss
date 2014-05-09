@@ -10,5 +10,8 @@ class GaussianRational:
         return GaussianRational(self.x-right.x, self.y-right.y)
     def __mul__(self, right):
         return Gauss(self.a*right.a - self.b*right.b, self.a*right.b + self.b*right.a)
+    def broken(self, right):
+        return (self.x-self.y) + (self.z-right.z)
+
 
     
